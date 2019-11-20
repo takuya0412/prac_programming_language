@@ -1,0 +1,8 @@
+def min(x:Int, y:Int):Int={
+  if(x<y) x
+  else y
+}
+
+
+val res = min(3,2)
+println(res)
