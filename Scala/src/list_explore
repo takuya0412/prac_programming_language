@@ -1,0 +1,31 @@
+val nilList = ::
+println("nilList" + nilList)
+
+val threeAttrList = List("Cool", "tools", "rule")
+println("threeAttrList" + threeAttrList)
+
+val consThreeList = "Cool" :: "Tools" :: "rule" :: Nil
+println("consThreeList" + consThreeList)
+
+val updateTwoList = List("a", "b") ::: List("c", "d")
+println("updateTwoList", updateTwoList)
+
+val updateTwoListbyCons = List("a", "b") :: List("c", "d")
+println("updateTwoListbycons" + updateTwoListbyCons)
+
+println("consThreeList's attr two" + consThreeList(2))
+
+println("length 4 count")
+consThreeList.count(s => s.length() == 4)
+
+println("dropvalue" + consThreeList.drop(2))
+
+println("dropRight" + consThreeList.dropRight(2))
+
+println("length 4 exists")
+consThreeList.exists(s => s.length == 4)
+
+println("length 4 filter")
+consThreeList.filter(s => s.length == 4)
+
+consThreeList.forall(s => s.endsWith("l"))
