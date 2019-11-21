@@ -1,0 +1,38 @@
+val consThreeList = List("Cool", "tools", "rule")
+
+println("foreach")
+consThreeList.foreach(s => print(s))
+
+println("head")
+println(consThreeList.head)
+
+print("init")
+println(consThreeList.init)
+
+println("isEmpty")
+println(consThreeList.isEmpty)
+
+println("last")
+println(consThreeList.last)
+
+println("length")
+println(consThreeList.length)
+
+println("map")
+println(consThreeList.map(s => s.length))
+
+println("mkString")
+println(consThreeList.mkString(", "))
+
+println("filterNot")
+consThreeList.filterNot(s => s.length == 4)
+
+println("reverse")
+println(consThreeList.reverse)
+
+println("sortWith")
+consThreeList.sortWith((s, t) => s.charAt(0).toLower < t.charAt(0).toLower)
+
+println("tail")
+println(consThreeList.tail)
+
