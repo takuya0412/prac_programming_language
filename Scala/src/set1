@@ -1,0 +1,12 @@
+var jetSet = Set("Boeing", "Airbus")
+jetSet += "Lear"
+println(jetSet.contains("Cessna"))
+
+import scala.collection.mutable
+val movieSet = mutable.Set("Hitch", "Poltergeist")
+println(movieSet)
+
+movieSet += "Shark"
+
+println(movieSet)
+
