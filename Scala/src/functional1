@@ -1,6 +1,7 @@
 def orgFunction(args: Array[String]): Unit = {
   for (arg <- args){
     println(arg)
+    print()
   }
 }
 orgFunction(args)
