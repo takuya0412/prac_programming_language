@@ -1,0 +1,2 @@
+def printArgs(args :Array[String]) = {args.mkString("\n")}
+printArgs()
