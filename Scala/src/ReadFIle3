@@ -1,5 +1,0 @@
-import scala.io.Source
-
-def widthOfLength(s: String)={
-  s.length
-}
