@@ -1,0 +1,9 @@
+class ChecksumAccumulator {
+  var sum = 0
+}
+
+var acc = new ChecksumAccumulator()
+var csa = new ChecksumAccumulator()
+acc.sum = 3
+println(acc.sum)
+println(csa.sum)
