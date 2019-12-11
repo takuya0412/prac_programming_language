@@ -1,0 +1,6 @@
+val s = "hello"; println(s)
+val x = 3
+if(x<3)
+  println(x)
+else
+  print("over three")
