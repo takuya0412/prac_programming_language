@@ -1,0 +1,8 @@
+val x = 3
+val y = 3
+
+val z = (x
++y)
+println(x)
+println(y)
+println(z)
