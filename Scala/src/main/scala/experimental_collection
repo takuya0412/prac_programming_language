@@ -1,0 +1,46 @@
+//val testArray:Array[String] = Array("ttes", "test")
+//
+//testArray(0) = "test"
+//println(testArray(1))
+//testArray(1) = "test1"
+//println(testArray(1))
+
+//val testArray = new Array[String](2)
+//testArray(1) = "test"
+//println(testArray(1))
+//testArray(5) = "test"
+//println(testArray(1))
+
+
+//val iniArray= Array("value1", "value2")
+//println(iniArray(1))
+//
+//val initializedList:List[String] = List("value1", "value2")
+//val testArray = Array("test", "name", 3)
+//println(testArray(1))
+//val testList = List("test", 333)
+//println(testList(0))
+//println(testList(1))
+
+//val testTuple = ("value", 100)
+//println(testTuple._1)
+//println(testTuple._2)
+
+//val testSet = Set("value1", "value2")
+//println(testSet)
+//
+//import scala.collection.mutable
+//val mutableSet = mutable.Set("value1", "value2")
+//mutableSet += "value3"
+//
+//println (mutableSet)
+//
+//println(mutableSet.contains("value3"))
+//
+val exMap = Map("name" -> "nooozui", "id" -> "ex")
+println(exMap("name"))
+println(exMap("id"))
+import scala.collection.mutable
+val mutableMap = mutable.Map[String, String]()
+mutableMap += ("name" -> "nooozui")
+mutableMap += ("id" -> "ex")
