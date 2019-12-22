@@ -9,5 +9,12 @@ class Rational(n:Int, d:Int) {
       denom * that.d
     )
   }
+  def lessThan(that: Rational) = {
+    this.number * that.denom < that.number * this.denom
+  }
+
+  def max(that: Rational) = {
+    if (this.lessThan(that)) that else this
+  }
 
 }
