@@ -19,6 +19,19 @@ class Rational(n:Int, d:Int) {
       denom * that.denom
     )
   }
+  def + (i:Int): Rational=
+    new Rational(number + i * denom , denom)
+
+  def - (that: Rational):Rational = {
+    new Rational(
+      number * that.denom - that.number * denom,
+      denom * that.denom
+    )
+  }
+
+  def - (i: Int): Rational =
+    new Rational(number - i * denom, denom)
+
 
   def * (that: Rational):Rational = {
     new Rational(
@@ -26,6 +39,15 @@ class Rational(n:Int, d:Int) {
       denom + that.denom
     )
   }
+
+  def * (i: Int):Rational =
+    new Rational(number * i, denom)
+
+  def / (that: Rational) =
+    new Rational(number * that.denom, denom * that.number)
+
+  def / (i: Int): Rational =
+    new Rational(number, denom * i)
 
   def lessThan(that: Rational) = {
     this.number * that.denom < that.number * this.denom
